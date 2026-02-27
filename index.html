@@ -129,37 +129,44 @@
           <article class="ios-card divide-y divide-slate-200/80" data-copy-body>
             <section class="space-y-2 py-6 first:pt-0">
               <h3 class="ios-subitem-title">Onboarding 学科专业化凸显</h3>
-              <p class="ios-body">完成《[PRD] iOS Onboarding 学科专业化凸显》的设计推进，把原来统一的 onboarding 拆成通用信任建立、学科分流、学科价值强化和准确性顾虑处理的链路。重点是按商科、医科、通用三类用户分别表达价值，而不是继续用一套话术覆盖所有人。</p>
-              <p class="ios-body">产出上已经形成完整流程、分学科价值页、权益承接页和埋点方案，并明确了 AB 分组，为后续实验验证提供了可直接落地的设计基础。</p>
+              <p class="ios-body">PRD 的核心背景是：商科与医科用户的价值诉求差异已经大到不能再用同一套 onboarding 话术覆盖。商科用户更在意能不能快速产出可交付内容和决策洞察，医科用户更在意记忆效率、复杂结构理解和内容权威性。如果还用统一入口去讲价值，前几屏就会把关键动机讲偏。</p>
+              <p class="ios-body">基于这个判断，这次把流程重写为“通用信任建立 - 学科分流 - 学科价值强化 - 准确性顾虑处理”，在用户完成学科选择后再进入对应价值页，把抽象能力翻译成该学科能立即感知的收益，而不是继续先展示泛化能力再让用户自己理解。</p>
+              <p class="ios-body">产出上已经形成完整流程、分学科价值页、权益承接页和埋点方案，并明确了 AB 分组。这项设计的实际价值，是提高新用户在 onboarding 阶段的价值感知速度，减少“能做很多，但跟我有什么关系”带来的早期流失。</p>
               <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/hIucAncsgAW1IO9iI398dP/Onboarding-%E4%BB%B7%E5%80%BC%E5%91%88%E7%8E%B0?node-id=750-580&t=QkRZAEOzwR6KbMqM-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/hIucAncsgAW1IO9iI398dP/Onboarding-%E4%BB%B7%E5%80%BC%E5%91%88%E7%8E%B0?node-id=750-580&t=QkRZAEOzwR6KbMqM-1</a></p>
             </section>
             <section class="space-y-2 py-6">
               <h3 class="ios-subitem-title">实时生成 HTML 视频讲解</h3>
-              <p class="ios-body">推进《[PRD] iOS 实时生成 HTML 视频讲解》，把“文字答案后增加视频讲解”从概念验证推进到可落地交互。设计范围覆盖答案页入口、生成中状态、生成成功/失败、全屏横屏播放和视频反馈组件，形成一条完整体验链路。</p>
-              <p class="ios-body">这项工作的重点不是加一个新入口，而是把视频能力做成可验证点击率、播放完成率和入金贡献的实验对象，避免停留在概念展示层。</p>
+              <p class="ios-body">PRD 的背景判断很明确：Gemini 3.0 Pro 已经把“按题目实时生成讲题视频”的技术门槛降下来了，但美国 Gen Z 用户的注意力窗口很短，直接做成 Gauth 那类长链路语音教学不一定成立。这个能力要成立，前提是入口足够轻，反馈足够快，不能让用户先承受冗长等待和过重心智。</p>
+              <p class="ios-body">所以这次不是简单增加一个视频按钮，而是把整条体验链路补齐成可验证闭环：答案页入口、生成中状态、生成成功/失败、全屏横屏播放、视频反馈与成功通知。重点是把“视频讲解”从概念展示改成真正可观察点击率、播放完成率和入金变化的实验能力。</p>
+              <p class="ios-body">这项工作的价值在于，先用最小可用体验验证视频是否值得继续深挖，而不是先投入重资产把它做成复杂教学系统。</p>
               <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/6CrhA8QQlTihmqvTzpciJ3/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4_Lower%E3%80%91?node-id=15858-3476&t=5njg9SDPUDttizlw-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/6CrhA8QQlTihmqvTzpciJ3/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4_Lower%E3%80%91?node-id=15858-3476&t=5njg9SDPUDttizlw-1</a></p>
             </section>
             <section class="space-y-2 py-6">
               <h3 class="ios-subitem-title">多模态追问输入功能</h3>
-              <p class="ios-body">推进《[PRD] iOS 多模态追问输入功能》，重构了追问栏默认态、Explain further / Simplify 快捷路径、Try again 切模式、追问页消息操作、发送失败重试，以及 Phase 1 的分屏弹层方案。</p>
-              <p class="ios-body">核心目标是让追问从普通聊天框变成围绕当前解题内容展开的学习操作区，减少用户提问成本，也提高模型回复的针对性和复用率。</p>
+              <p class="ios-body">PRD 的分析指出，用户追问最集中的几类需求其实不是“随便聊聊”，而是补图、补上下文、输入公式、展开解释和重解。原有纯 chatbox 方案对公式输入不友好，也很难让用户在追问时同时参照原题和原答案，导致提问不够准、模型回复也容易漂。</p>
+              <p class="ios-body">基于这个问题，这次重构了追问栏默认态、Explain further / Simplify 快捷路径、Try again 切模式、追问页消息操作、发送失败重试，并补齐了 Phase 1 的分屏弹层方案。方向上不再把追问当独立聊天页，而是把它做成围绕当前解题内容展开的学习操作区。</p>
+              <p class="ios-body">这项设计的意义是降低追问门槛，让用户更容易问到点上，也让模型更容易基于当前答案给出针对性回复，从而提升追问的实际使用率和有效性。</p>
               <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/KGQtaxmuvZiInQbRUScM9h/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4%E3%80%91?node-id=9964-61123&t=1kEfgiZDt8S53OwJ-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/KGQtaxmuvZiInQbRUScM9h/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4%E3%80%91?node-id=9964-61123&t=1kEfgiZDt8S53OwJ-1</a></p>
             </section>
             <section class="space-y-2 py-6">
               <h3 class="ios-subitem-title">Solution 页信息结构重构 2.1 / 多模型导航收敛</h3>
-              <p class="ios-body">推进《[PRD] iOS Solution页信息结构重构_2.1 期 多模型导航收敛》，把答案页从堆叠式信息区改成更明确的“竖向瀑布流 + 吸顶横向 Tab + 顶部模式切换”结构，同时补齐用户在等待新答案时回看旧答案的能力。</p>
-              <p class="ios-body">重点完成了模式切换入口、已解模型与未解模型的可点击规则、加载中状态和引导气泡的位置收敛，同时补齐 solved with 展示规则、未完成模型置灰不可切换、箭头位置微调、卡片背景规范以及加载与完成 icon 的回退方案，降低多模型场景下的等待断裂和理解成本。</p>
+              <p class="ios-body">PRD 里定义的问题非常具体：当前答案页把题目图、多模型切换、Thinking、Final Answer、步骤、视频、追问等模块全部堆叠在一起，用户注意力被拆散；同时 2.1 期还要解决一个更实际的问题，用户从 Fast 切到其他模式后无法回看 Fast 答案，等待新答案时只能空等，体验不连续。</p>
+              <p class="ios-body">因此这次的设计不是单做一个模式菜单，而是围绕“信息结构和切换逻辑”一起重构：把页面整理成更明确的竖向瀑布流和吸顶横向 Tab，再用顶部模式切换入口承接多模型切换。细节上补齐了已解模型与未解模型的点击规则、加载中状态、气泡引导、Solved with / More to try 的动态展示逻辑，以及等待中仅允许查看已解模式的约束。</p>
+              <p class="ios-body">这项工作的核心价值，是把多模型体验从“切一下再等”改成“切换过程中也能回看和比较”，减少等待空档，提高答案页的可读性和连续性。</p>
               <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=6839-9417&t=wbLfu790UITZkX2y-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=6839-9417&t=wbLfu790UITZkX2y-1</a></p>
             </section>
             <section class="space-y-2 py-6">
               <h3 class="ios-subitem-title">多页拍引导及商业化策略</h3>
-              <p class="ios-body">推进《[PRD] iOS 多页拍引导及商业化策略》，把多页拍从隐藏能力改成需要明确教育和承接的能力。你处理了首次进入裁剪页的引导气泡、Add more 提示、免费使用次数门槛，以及多页拍之后的付费承接。</p>
-              <p class="ios-body">这项工作的直接价值是把输入缺页导致的错误前置消灭，让高价值功能不再依赖用户自己发现。</p>
+              <p class="ios-body">PRD 的背景是：用户真实拍题场景已经明显多页化，尤其商科题目经常跨页出现题干、表格、图和小问。只拍一页会直接造成信息缺失，模型后面再怎么解释都救不回来。多页拍本质上是在输入阶段提前消灭错误，而不是事后修补答案。</p>
+              <p class="ios-body">另一个关键判断是，多页拍不是用户天然会发现的能力，必须靠引导才能变成习惯动作。数据也支持这一点：7 天内 40% 用户只用 1 次，但进入前 20% 后频次会直接跳到 6 次，说明它不是普遍高频，却对高价值用户有明显粘性。</p>
+              <p class="ios-body">基于此，这次把多页拍设计成“先教育、后承接”的路径，补齐首次进入裁剪页的引导气泡、Add more 提示、免费使用次数门槛和后续付费承接。它的价值不只是多一个功能点，而是减少因输入缺页导致的错误答案，同时把高价值能力更稳定地转成商业化入口。</p>
               <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=5673-16304&t=rWNFgheSKQ4nGO5P-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=5673-16304&t=rWNFgheSKQ4nGO5P-1</a></p>
             </section>
             <section class="space-y-2 py-6">
               <h3 class="ios-subitem-title">价格测试与策略承接对齐</h3>
-              <p class="ios-body">跟进《2026价格测试》，明确了 2 月下旬“大学生无试用推全”和“折扣周包涨价”两条策略的页面承接与流量分配。文档里已经给出“无试用组大学生入金提升 25%”的结论，你在设计侧重点是保证 Onboarding、Normal Shop 和弹窗页的口径一致，避免价格策略变化和页面表达脱节。</p>
+              <p class="ios-body">价格策略这条的背景不是单纯做运营配置，而是已有数据表明：大量试用用户会很快取消，且取消前往往已经完成核心解题需求，说明“试用”对部分人群并不一定构成有效转化。2 月这轮策略里，大学生无试用组已经验证出入金提升 25%，因此需要把局部实验推进成更大范围的承接统一。</p>
+              <p class="ios-body">这次工作的重点在设计侧不是改价格本身，而是把 Onboarding Intro、Onboarding Shop、Normal Shop 和弹窗页的展示逻辑、价格文案和入口口径统一起来，避免策略在后台切了，但用户在不同入口看到的是不同说法，最终把实验收益抵消掉。</p>
+              <p class="ios-body">这项工作的价值，是让价格实验真正落到用户可感知的一致体验上，减少入口间信息错位造成的理解偏差和转化损耗。</p>
             </section>
             <section class="space-y-2 py-6 last:pb-0">
               <h3 class="ios-subitem-title">整体结果与用户价值</h3>
