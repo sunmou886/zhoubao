@@ -109,7 +109,7 @@
     <main class="ios-shell">
       <header class="mb-7 md:mb-9">
         <h1 class="ios-title">设计师周报助手</h1>
-        <p class="ios-subtitle">标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
+        <p class="ios-subtitle">2026-03-02 至 2026-03-07 周报。标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
       </header>
 
       <section class="space-y-9 md:space-y-10">
@@ -127,51 +127,11 @@
             </button>
           </div>
           <article class="ios-card divide-y divide-slate-200/80" data-copy-body>
-            <section class="space-y-2 py-6 first:pt-0">
-              <h3 class="ios-subitem-title">Onboarding 学科专业化凸显</h3>
-              <p class="ios-body">PRD 的核心背景是：商科与医科用户的价值诉求差异已经大到不能再用同一套 onboarding 话术覆盖。商科用户更在意能不能快速产出可交付内容和决策洞察，医科用户更在意记忆效率、复杂结构理解和内容权威性。如果还用统一入口去讲价值，前几屏就会把关键动机讲偏。</p>
-              <p class="ios-body">基于这个判断，这次把流程重写为“通用信任建立 - 学科分流 - 学科价值强化 - 准确性顾虑处理”，在用户完成学科选择后再进入对应价值页，把抽象能力翻译成该学科能立即感知的收益，而不是继续先展示泛化能力再让用户自己理解。</p>
-              <p class="ios-body">产出上已经形成完整流程、分学科价值页、权益承接页和埋点方案，并明确了 AB 分组。这项设计的实际价值，是提高新用户在 onboarding 阶段的价值感知速度，减少“能做很多，但跟我有什么关系”带来的早期流失。</p>
-              <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/hIucAncsgAW1IO9iI398dP/Onboarding-%E4%BB%B7%E5%80%BC%E5%91%88%E7%8E%B0?node-id=750-580&t=QkRZAEOzwR6KbMqM-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/hIucAncsgAW1IO9iI398dP/Onboarding-%E4%BB%B7%E5%80%BC%E5%91%88%E7%8E%B0?node-id=750-580&t=QkRZAEOzwR6KbMqM-1</a></p>
-            </section>
-            <section class="space-y-2 py-6">
-              <h3 class="ios-subitem-title">实时生成 HTML 视频讲解</h3>
-              <p class="ios-body">PRD 的背景判断很明确：Gemini 3.0 Pro 已经把“按题目实时生成讲题视频”的技术门槛降下来了，但美国 Gen Z 用户的注意力窗口很短，直接做成 Gauth 那类长链路语音教学不一定成立。这个能力要成立，前提是入口足够轻，反馈足够快，不能让用户先承受冗长等待和过重心智。</p>
-              <p class="ios-body">所以这次不是简单增加一个视频按钮，而是把整条体验链路补齐成可验证闭环：答案页入口、生成中状态、生成成功/失败、全屏横屏播放、视频反馈与成功通知。重点是把“视频讲解”从概念展示改成真正可观察点击率、播放完成率和入金变化的实验能力。</p>
-              <p class="ios-body">这项工作的价值在于，先用最小可用体验验证视频是否值得继续深挖，而不是先投入重资产把它做成复杂教学系统。</p>
-              <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/6CrhA8QQlTihmqvTzpciJ3/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4_Lower%E3%80%91?node-id=15858-3476&t=5njg9SDPUDttizlw-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/6CrhA8QQlTihmqvTzpciJ3/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4_Lower%E3%80%91?node-id=15858-3476&t=5njg9SDPUDttizlw-1</a></p>
-            </section>
-            <section class="space-y-2 py-6">
-              <h3 class="ios-subitem-title">多模态追问输入功能</h3>
-              <p class="ios-body">PRD 的分析指出，用户追问最集中的几类需求其实不是“随便聊聊”，而是补图、补上下文、输入公式、展开解释和重解。原有纯 chatbox 方案对公式输入不友好，也很难让用户在追问时同时参照原题和原答案，导致提问不够准、模型回复也容易漂。</p>
-              <p class="ios-body">基于这个问题，这次重构了追问栏默认态、Explain further / Simplify 快捷路径、Try again 切模式、追问页消息操作、发送失败重试，并补齐了 Phase 1 的分屏弹层方案。方向上不再把追问当独立聊天页，而是把它做成围绕当前解题内容展开的学习操作区。</p>
-              <p class="ios-body">这项设计的意义是降低追问门槛，让用户更容易问到点上，也让模型更容易基于当前答案给出针对性回复，从而提升追问的实际使用率和有效性。</p>
-              <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/KGQtaxmuvZiInQbRUScM9h/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4%E3%80%91?node-id=9964-61123&t=1kEfgiZDt8S53OwJ-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/KGQtaxmuvZiInQbRUScM9h/iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q4%E3%80%91?node-id=9964-61123&t=1kEfgiZDt8S53OwJ-1</a></p>
-            </section>
-            <section class="space-y-2 py-6">
-              <h3 class="ios-subitem-title">Solution 页信息结构重构 2.1 / 多模型导航收敛</h3>
-              <p class="ios-body">PRD 里定义的问题非常具体：当前答案页把题目图、多模型切换、Thinking、Final Answer、步骤、视频、追问等模块全部堆叠在一起，用户注意力被拆散；同时 2.1 期还要解决一个更实际的问题，用户从 Fast 切到其他模式后无法回看 Fast 答案，等待新答案时只能空等，体验不连续。</p>
-              <p class="ios-body">因此这次的设计不是单做一个模式菜单，而是围绕“信息结构和切换逻辑”一起重构：把页面整理成更明确的竖向瀑布流和吸顶横向 Tab，再用顶部模式切换入口承接多模型切换。细节上补齐了已解模型与未解模型的点击规则、加载中状态、气泡引导、Solved with / More to try 的动态展示逻辑，以及等待中仅允许查看已解模式的约束。</p>
-              <p class="ios-body">这项工作的核心价值，是把多模型体验从“切一下再等”改成“切换过程中也能回看和比较”，减少等待空档，提高答案页的可读性和连续性。</p>
-              <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=6839-9417&t=wbLfu790UITZkX2y-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=6839-9417&t=wbLfu790UITZkX2y-1</a></p>
-            </section>
-            <section class="space-y-2 py-6">
-              <h3 class="ios-subitem-title">多页拍引导及商业化策略</h3>
-              <p class="ios-body">PRD 的背景是：用户真实拍题场景已经明显多页化，尤其商科题目经常跨页出现题干、表格、图和小问。只拍一页会直接造成信息缺失，模型后面再怎么解释都救不回来。多页拍本质上是在输入阶段提前消灭错误，而不是事后修补答案。</p>
-              <p class="ios-body">另一个关键判断是，多页拍不是用户天然会发现的能力，必须靠引导才能变成习惯动作。数据也支持这一点：7 天内 40% 用户只用 1 次，但进入前 20% 后频次会直接跳到 6 次，说明它不是普遍高频，却对高价值用户有明显粘性。</p>
-              <p class="ios-body">基于此，这次把多页拍设计成“先教育、后承接”的路径，补齐首次进入裁剪页的引导气泡、Add more 提示、免费使用次数门槛和后续付费承接。它的价值不只是多一个功能点，而是减少因输入缺页导致的错误答案，同时把高价值能力更稳定地转成商业化入口。</p>
-              <p class="ios-body"><a class="ios-link" href="https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=5673-16304&t=rWNFgheSKQ4nGO5P-1" target="_blank" rel="noopener noreferrer">https://www.figma.com/design/FYBuLvQg88m20HlSlphMoS/2026-iOS-Solver-%E8%BF%AD%E4%BB%A3%E3%80%90Q1%E3%80%91?node-id=5673-16304&t=rWNFgheSKQ4nGO5P-1</a></p>
-            </section>
-            <section class="space-y-2 py-6">
-              <h3 class="ios-subitem-title">价格测试与策略承接对齐</h3>
-              <p class="ios-body">价格策略这条的背景不是单纯做运营配置，而是已有数据表明：大量试用用户会很快取消，且取消前往往已经完成核心解题需求，说明“试用”对部分人群并不一定构成有效转化。2 月这轮策略里，大学生无试用组已经验证出入金提升 25%，因此需要把局部实验推进成更大范围的承接统一。</p>
-              <p class="ios-body">这次工作的重点在设计侧不是改价格本身，而是把 Onboarding Intro、Onboarding Shop、Normal Shop 和弹窗页的展示逻辑、价格文案和入口口径统一起来，避免策略在后台切了，但用户在不同入口看到的是不同说法，最终把实验收益抵消掉。</p>
-              <p class="ios-body">这项工作的价值，是让价格实验真正落到用户可感知的一致体验上，减少入口间信息错位造成的理解偏差和转化损耗。</p>
-            </section>
-            <section class="space-y-2 py-6 last:pb-0">
-              <h3 class="ios-subitem-title">整体结果与用户价值</h3>
-              <p class="ios-body">这一阶段真正推动的是把多条核心链路做成可验证、可实验、可交付的设计系统，而不是单点页面优化。结果上，已经形成多条需求的完整交互链路、分学科价值表达、模式切换规则、追问分屏逻辑、多页拍承接逻辑和价格策略承接口径。</p>
-              <p class="ios-body">对用户和业务的直接价值，是减少输入缺失、等待空窗和理解断层，提高用户对能力的感知效率，并为后续转化实验提供更稳定的设计前提。</p>
+            <section class="space-y-2 py-6 first:pt-0 last:pb-0">
+              <h3 class="ios-subitem-title">本周工作重心：组件原型落地与可复用准备</h3>
+              <p class="ios-body">本周（2026-03-02 至 2026-03-07）工作重心是完成 Glass Slider 双选项组件的可运行原型，并把“可展示”推进到“可复用”的状态。核心产出包括页面结构搭建、玻璃态视觉实现、状态切换交互和基础可访问性语义，形成了一版可直接评审与演示的前端结果。</p>
+              <p class="ios-body">从用户价值看，这项工作本身不是大型功能迭代，而是偏执行支持类工作，价值在于把后续多方案切换入口提前标准化，减少每次新需求都重做交互骨架的成本。通过统一 data-index 状态驱动与按钮激活态规则，后续新增业务选项时可以沿用同一套行为模型，降低理解与维护门槛。</p>
+              <p class="ios-body">本周结果判断：已完成“从静态样式到可交互组件”的基础跨越，但暂无核心结果型推进（如线上数据提升或业务指标改善）。当前阶段最明确的成果是工程可交付性提升，可作为下周接入真实文案、事件埋点与组件封装的稳定起点。</p>
             </section>
           </article>
         </section>
@@ -190,9 +150,9 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">这段时间最明显的新增认知有两条。第一，学科差异对价值表达的影响比原来判断更大。Onboarding 文档里已经明确：商科用户更关注可交付内容和决策洞察，医科用户更关注记忆效率、复杂结构理解和内容权威性，用一套统一话术很难同时打中两类核心动机。</p>
-            <p class="ios-body">第二，多页拍的用户行为出现明显两极分化。大部分用户只是浅尝，但一旦跨过前几次使用门槛，频次会明显跃迁，说明这类能力一旦被教育成功，会变成高粘性入口。</p>
-            <p class="ios-body">我的判断是，当前产品更应该优先强化“高价值能力的识别与教育”，而不是继续堆叠泛化能力展示。建议后续继续推进按学科表达和多页拍引导，但评估不能只看点击，要重点看进入深层链路后的留存、追问和付费表现。</p>
+            <p class="ios-body">本周市场、竞品与用户洞察层面，暂无可验证的新数据输入（缺少本周会议纪要与数据面板的完整同步），因此不做猜测性结论。基于现有信息只能做保守判断：用户在选择型组件上的核心诉求依旧是“看得懂、点得准、状态反馈清楚”，而不是视觉复杂度本身。</p>
+            <p class="ios-body">从最近执行过程的反馈看，若状态切换反馈不明确，用户会把“是否生效”与“是否可继续操作”混在一起判断，导致犹豫与重复点击。这个现象在组件层面已经被验证，因此后续界面迭代需要优先确保状态可解释性，再叠加更复杂的功能入口。</p>
+            <p class="ios-body">综合判断：本周暂无结构性认知升级。下周若补齐行为数据与评审记录，再输出更强结论；在此之前继续坚持“有数据就下判断，没数据就明确暂无”的周报准则。</p>
           </article>
         </section>
 
@@ -210,9 +170,9 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">这段时间最值得沉淀的 AI 案例，是把“视频讲题”从静态概念推进成可运行的产品形态。原来答案页的解释主要停留在文字与步骤展示，用户是否愿意继续理解、是否能看懂，更多依赖阅读耐心。</p>
-            <p class="ios-body">现在借助 Gemini 3.0 Pro 的能力和约束式 prompt，把题目讲解转成可实时生成的 HTML 视频方案，设计不再只停留在“入口长什么样”，而是能围绕生成中、生成成功、播放、反馈这整条真实链路设计。</p>
-            <p class="ios-body">变化不只是形式更丰富，而是让 AI 讲解从抽象能力变成可以被验证点击率、播放完成率和转化贡献的实验对象。这个方法可团队推广，但前提是继续保持“先做最小闭环、再扩展体验”的节奏。</p>
+            <p class="ios-body">本周可沉淀的 AI 应用案例是“周报初稿生成 + 人工校验发布”的轻流程。先由 AI 生成结构化初稿，再由人工逐条核对事实、删掉不确定表述、补充结果判断，最后再发布到网页。相比完全手写，效率更高；相比完全自动发布，准确性更可控。</p>
+            <p class="ios-body">本次实际收益在于把生成动作与发布动作拆开：生成追求速度，发布前校验追求可信度。这个拆分显著降低了“文本看起来完整但事实不完整”的风险，也便于快速迭代周报模板。</p>
+            <p class="ios-body">方法论判断：AI 在周报场景最适合做“结构化提效器”，不适合替代事实来源。后续继续沿用“AI 起草、人工定稿、再自动发布”的组合，能够在速度和真实性之间维持平衡。</p>
           </article>
         </section>
 
@@ -230,9 +190,9 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">这段时间主动推进的重点，是把多个需求里的“承接链路”和“状态规则”做统一收口，而不是各自孤立推进。你在模型菜单切换里主动补充了已解模型与当前模型的展示规则、置灰规则和状态 icon 回退；在 Solution 页 2.1 里把多模型切换的逻辑从单次交互扩展到“等待中也能回看”。</p>
-            <p class="ios-body">之所以值得做，是因为这些问题单看都是小细节，但如果不提前统一，最后会在评审、研发和上线阶段反复返工。</p>
-            <p class="ios-body">当前阶段已经完成规则层面的收口，并沉淀到了 PRD 或你自己的工作文档里。下一步更值得继续做的是，把状态规则、承接规则、置灰规则抽成可复用模板，减少每个需求都重新定义一次。</p>
+            <p class="ios-body">本周自驱推动的重点是把“周报生成后自动上网页”流程闭环补齐，而不是只停留在内容产出。具体动作包括：定位周报站点仓库、确认 Pages 发布触发条件、按本周时间范围替换网页正文、准备单文件提交触发自动部署。</p>
+            <p class="ios-body">这个动作的价值是减少流程断点。过去“生成完成”容易被误认为“任务完成”，但对于实际协作来说，只有发布到固定网页地址并可被查看，才算完整交付。把交付定义从“文本完成”提升为“可访问结果完成”，能减少反复提醒和手动补步骤。</p>
+            <p class="ios-body">本周阶段性结果：流程已被重新对齐，后续会继续固化为默认执行顺序，避免再次出现只生成不发布的中断。</p>
           </article>
         </section>
 
@@ -250,7 +210,8 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">本次时间范围内，缺少足够明确的被 @ 记录和协作触发条件统计，暂无特别致谢对象。</p>
+            <p class="ios-body">本周感谢你直接指出“生成后需要发布网页”这一关键要求，避免了交付停在中间态。这个提醒直接把任务从“文本产出”拉回到“结果可见”，对流程质量改进有明确价值。</p>
+            <p class="ios-body">除上述明确触发外，本周暂无更多可核实到具体场景与结果贡献的致谢对象，后续按有事实、有场景、有结果的标准继续记录。</p>
           </article>
         </section>
       </section>
