@@ -109,7 +109,7 @@
     <main class="ios-shell">
       <header class="mb-7 md:mb-9">
         <h1 class="ios-title">设计师周报助手</h1>
-        <p class="ios-subtitle">2026-03-16 至 2026-03-21 周报。标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
+        <p class="ios-subtitle">2026-03-16 至 2026-03-21 周报。依据 2026-03-20 Solvely 设计周会发言整理。标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
       </header>
 
       <section class="space-y-9 md:space-y-10">
@@ -128,11 +128,11 @@
           </div>
           <article class="ios-card divide-y divide-slate-200/80" data-copy-body>
             <section class="space-y-2 py-6 first:pt-0 last:pb-0">
-              <h3 class="ios-subitem-title">本周工作重心：价格实验推全、关键交互统一、视频讲解方案收敛</h3>
-              <p class="ios-body">1. 推进周包价格实验推全，完成 3 个 Apple 支付组和 1 个 Stripe 支付组的 Superwall 配置落地；结合《2026价格测试》记录，3.15 价格策略推全后整体入金提升 44%。</p>
-              <p class="ios-body">2. 统一 NotificationBanner 的样式与交互，补充 follow-up 组件元素和部分 Sheets 色板，并同步把需求细节补齐，减少开发实现歧义。</p>
-              <p class="ios-body">3. 推进“实时生成 SVG 动图讲解”方案评审后，确认 SVG 效果不理想，路线收敛到用 Manim 生成视频讲解，并在系统方案里进一步落到 MP4 播放链路。</p>
-              <p class="ios-body">4. 高亮引用数据继续验证出正向结果，留存和入金转化均有显著提升，本周进入二期实验，开始对比强制曝光和点击触发两种机制。</p>
+              <h3 class="ios-subitem-title">本周工作重心：设计周会发言里聚焦商业化、解题可视化和设计协作效率</h3>
+              <p class="ios-body">1. 在周会上汇报了周包价格实验推全后的正向结果，明确当前价格策略效果良好，转化率和入金率都有提升，并且已经继续加测新实验组。</p>
+              <p class="ios-body">2. 推进 AIO 和 Solver 权益提示样式与交互统一，把标题、正文和主按钮等结构拆清，目标是把不同场景下的权益提示口径收拢到同一套设计语言。</p>
+              <p class="ios-body">3. 围绕 Solver 解题可视化继续推进方案收敛，周会上明确讲到实时 SVG 动图讲解效果不够理想，因此转向更稳定的视频化方案，优先保证用户看到的讲解质量。</p>
+              <p class="ios-body">4. 高亮引用实验已经跑出正向信号，留存率和入金率都有提升，本周继续进入二期实验，重点验证强制触发和点击触发两种曝光方式的差异。</p>
             </section>
           </article>
         </section>
@@ -151,10 +151,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 价格侧洞察进一步被验证：低门槛周包加无试用策略在当前链路下更有效，3.15 价格策略推全后整体入金提升 44%，说明付费门槛设计对转化影响直接且显著。</p>
-            <p class="ios-body">2. 展示机制洞察从“功能是否被点击”转向“内容是否被看见”：高亮引用不只拉点击，还带动留存和入金转化，因此本周继续进入二期验证曝光方式差异。</p>
-            <p class="ios-body">3. 教学表达洞察比较明确：题解场景里“能生成 SVG”不等于“能稳定交付效果”，几何、三角、物理类内容更需要可控的视频化呈现，而不是追求轻量但不稳定的 SVG 路线。</p>
-            <p class="ios-body">4. 竞品侧本周未检索到新增结构化分析文档，暂无可确认的新竞品结论。</p>
+            <p class="ios-body">1. 竞品调研层面，周会上提到 Turbo 会在 loading 过程中持续给用户提示，Studyfetch 上传入口丰富但理解成本偏高，Gizmo 通过更明显的上传入口降低门槛，Sally 用视频引导但存在卡顿问题。</p>
+            <p class="ios-body">2. 由此反推到自身产品，当前最核心的问题不是功能不够多，而是 sample 入口偏弱、案例单一、上传弹窗没有完整表达用户能获得什么，价值呈现链路还有明显优化空间。</p>
+            <p class="ios-body">3. 数据侧的判断也更明确了，真正值得持续放大的不是单次点击，而是曝光后是否带来留存和付费结果，因此高亮引用实验会继续以“结果指标”而不是“表层点击”作为判断标准。</p>
+            <p class="ios-body">4. 解题讲解方案的洞察也比较直接：在教育场景里，技术方案是否先进不重要，重要的是用户能否稳定看懂，因此 SVG 路线让位给更可交付的视频方案是必要取舍。</p>
           </article>
         </section>
 
@@ -172,10 +172,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 本周 AI 应用案例是“实时生成视频讲解”：先从 SVG 动图切入验证，再根据效果回退并切换到 Manim 生成视频、前端以 MP4 方案承接播放。</p>
-            <p class="ios-body">2. 目标场景聚焦在几何、三角、物理题型，让用户在 Solving Steps 之外看到动态讲解过程，补足纯文本和公式不容易表达的运动关系。</p>
-            <p class="ios-body">3. 本周产出的关键不是“又做了一个 AI 功能”，而是把 AI 生成能力向工程可交付收敛，补齐了 loading、失败降级、插入位置、AB 分桶和播放链路等落地细节。</p>
-            <p class="ios-body">4. 当前结论是：AI 生成侧可以继续探索，但用户面看到的体验必须优先稳定，因此先用视频方案交付，再保留后续优化生成质量的空间。</p>
+            <p class="ios-body">1. 周会里明确分享了 AI 工具使用判断：设计协作优先多用 Codex 和 Cursor，少依赖不可控、没有 GUI 的纯命令式链路，核心原因是可视化和可回退能力更适合设计工作流。</p>
+            <p class="ios-body">2. 本周还展示了用 Cursor 结合 Figma 插件去创建 variable、style 和 component 的尝试，这条链路已经能帮助把一部分手工搭建设计系统的工作自动化。</p>
+            <p class="ios-body">3. 在知识管理层面，也把 AI 工作方式进一步结构化：通过长期记忆、goals、knowledge 和 task 的分层，让同一个 agent 可以围绕同一套项目资料持续工作，而不是每次重讲背景。</p>
+            <p class="ios-body">4. 从设计落地角度看，本周最有价值的 AI 不是“生成一个炫的效果”，而是把设计资产迁移、界面复刻、资料读取和协作沟通这些重复劳动压缩掉。</p>
           </article>
         </section>
 
@@ -193,10 +193,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 把“实时生成 SVG 动图讲解”从概念 PRD 推进到系统方案收敛，及时承认 SVG 路线的问题并改到更可落地的视频方案，避免团队继续在错误路径上消耗。</p>
-            <p class="ios-body">2. 继续往前推动高亮引用二期实验，不停留在一期结果复述，而是把下一轮核心验证点明确成“强制曝光 vs 点击触发”的机制差异。</p>
-            <p class="ios-body">3. 产出《Codex 工作架构：PM / PD 如何用科学的文件组织把 AI 变成长期工作系统》，把个人对 AI 工作流的实践沉淀成方法文档，属于对团队长期效率有复用价值的基础建设。</p>
-            <p class="ios-body">4. 在 NotificationBanner 和 follow-up 相关需求上主动补细节、收口实现口径，减少评审后反复补规则的成本。</p>
+            <p class="ios-body">1. 在周会上主动把设计侧的数据获取问题摊开来讲，推动后续通过统一文档管理、放开 PRD 可见范围和引入飞书 MCP 辅助取数，减少设计师拿不到数据、拿到也读不懂的情况。</p>
+            <p class="ios-body">2. 主动输出了对 Cursor、Codex 和 Figma 协作方式的使用建议，不只停留在个人试用，而是已经准备把开源免费工具和方法发到群里，帮助团队一起提升效率。</p>
+            <p class="ios-body">3. 在解题可视化方向上没有停留在“做出一个 demo”，而是及时在周会上同步路线修正，从 SVG 切到视频化方案，避免团队在效果不佳的技术路径上继续投入。</p>
+            <p class="ios-body">4. 把价格实验、高亮引用和权益提示这些分散事项重新组织成一条更清晰的汇报主线，让周会上的讨论能围绕“结果如何、为什么有效、接下来怎么放大”继续推进。</p>
           </article>
         </section>
 
@@ -214,9 +214,9 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 感谢配合周包价格实验推全的支付配置和研发同学，帮助 Apple 与 Stripe 多组配置在本周顺利落地。</p>
-            <p class="ios-body">2. 感谢参与“实时生成视频讲解”评审和系统方案收敛的产品、研发同学，在 SVG 转视频的关键判断上快速对齐，避免方案继续空转。</p>
-            <p class="ios-body">3. 感谢配合 NotificationBanner 与 follow-up 细节收口的协作同学，让样式、交互和需求口径能在实现前先统一下来。</p>
+            <p class="ios-body">1. 感谢在设计周会上一起对齐价格实验、高亮引用和解题可视化的产品与研发同学，让关键结论和后续动作能当场收敛下来。</p>
+            <p class="ios-body">2. 感谢分享竞品、Onboarding 和数据获取问题的一线设计同学，这些输入直接帮助把本周的周会结论从“展示进展”推进到“明确问题和解法”。</p>
+            <p class="ios-body">3. 感谢一起讨论 Codex、Cursor 和 Figma 工作流的同学，让 AI 工具这件事不只停留在个人尝试，而是开始形成团队可复用的方法。</p>
           </article>
         </section>
       </section>
