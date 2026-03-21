@@ -109,7 +109,7 @@
     <main class="ios-shell">
       <header class="mb-7 md:mb-9">
         <h1 class="ios-title">设计师周报助手</h1>
-        <p class="ios-subtitle">2026-03-02 至 2026-03-07 周报。标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
+        <p class="ios-subtitle">2026-03-16 至 2026-03-21 周报。标题在外，正文在下方卡片中。右侧图标仅复制正文。</p>
       </header>
 
       <section class="space-y-9 md:space-y-10">
@@ -128,11 +128,11 @@
           </div>
           <article class="ios-card divide-y divide-slate-200/80" data-copy-body>
             <section class="space-y-2 py-6 first:pt-0 last:pb-0">
-              <h3 class="ios-subitem-title">本周工作重心：AIO 链路重构与关键实验推进</h3>
-              <p class="ios-body">1. 本周主线是 AIO 核心链路并行推进：Solution 页 2.1 多模型导航收敛进入数据分析，多模态追问输入进入二期开发并计划下周初送审，Onboarding 学科专业化持续开发，AI Notes 改 Study Tab 完成 UI 方案，商科结构化答案高亮引用已送审实验。</p>
-              <p class="ios-body">2. 多模型导航收敛实验结果为正向：Tab 点击渗透率 29.7%，Try Again 的 UV 渗透提升 17.4%，PV 渗透提升 37.3%。</p>
-              <p class="ios-body">3. AIO 导流实验中实验组 1（AIO Tabs）在新老用户均表现最优：新用户 Tab 切换率 18.11%、AIO 生成率 2.09%、IAP 转化提升 3.4%、UV 提升 175.9%；老用户 Tab 切换率 12.50%、AIO 生成率 1.03%、IAP 转化提升 10.3%、UV 提升 151.9%。</p>
-              <p class="ios-body">4. 本周价值判断：属于结构性效率优化并已有数据支撑扩量；未完成项保持在可验证推进节奏内。</p>
+              <h3 class="ios-subitem-title">本周工作重心：价格实验推全、关键交互统一、视频讲解方案收敛</h3>
+              <p class="ios-body">1. 推进周包价格实验推全，完成 3 个 Apple 支付组和 1 个 Stripe 支付组的 Superwall 配置落地；结合《2026价格测试》记录，3.15 价格策略推全后整体入金提升 44%。</p>
+              <p class="ios-body">2. 统一 NotificationBanner 的样式与交互，补充 follow-up 组件元素和部分 Sheets 色板，并同步把需求细节补齐，减少开发实现歧义。</p>
+              <p class="ios-body">3. 推进“实时生成 SVG 动图讲解”方案评审后，确认 SVG 效果不理想，路线收敛到用 Manim 生成视频讲解，并在系统方案里进一步落到 MP4 播放链路。</p>
+              <p class="ios-body">4. 高亮引用数据继续验证出正向结果，留存和入金转化均有显著提升，本周进入二期实验，开始对比强制曝光和点击触发两种机制。</p>
             </section>
           </article>
         </section>
@@ -151,10 +151,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 价格与转化洞察：历史实验显示试用订阅取消率高，且大量用户在取消前已完成核心解题需求，说明“试用”对部分人群并非有效转化抓手。</p>
-            <p class="ios-body">2. 产品结构洞察：入口从单一 AI Notes 向 Study Tab 工具矩阵迁移，目标是把课堂材料到备考行为的一体化路径跑通。</p>
-            <p class="ios-body">3. 本周推进重点是 Study Tab 两套导航实验（录音入口拆分/合并），核心在验证入口结构对行为与转化的影响，而非单纯加功能。</p>
-            <p class="ios-body">4. 竞品/新增收藏：本周飞书记录未检索到可确认的新竞品分析文档，暂无新增结论。</p>
+            <p class="ios-body">1. 价格侧洞察进一步被验证：低门槛周包加无试用策略在当前链路下更有效，3.15 价格策略推全后整体入金提升 44%，说明付费门槛设计对转化影响直接且显著。</p>
+            <p class="ios-body">2. 展示机制洞察从“功能是否被点击”转向“内容是否被看见”：高亮引用不只拉点击，还带动留存和入金转化，因此本周继续进入二期验证曝光方式差异。</p>
+            <p class="ios-body">3. 教学表达洞察比较明确：题解场景里“能生成 SVG”不等于“能稳定交付效果”，几何、三角、物理类内容更需要可控的视频化呈现，而不是追求轻量但不稳定的 SVG 路线。</p>
+            <p class="ios-body">4. 竞品侧本周未检索到新增结构化分析文档，暂无可确认的新竞品结论。</p>
           </article>
         </section>
 
@@ -172,11 +172,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 本周 AI 案例是“视频迭代-AI测试”：在即梦 Agent（Seedance 2.0）下，围绕图片生视频连续测试了材质替换、动效一致性、配音与字幕控制。</p>
-            <p class="ios-body">2. 执行效率：单轮迭代耗时约 1.5 至 3 小时，已形成可复现的多轮对照样本。</p>
-            <p class="ios-body">3. 关键问题：材质一致性仍不稳定，且存在自动改配音/文案现象。</p>
-            <p class="ios-body">4. 有效策略：通过更明确的分镜参考和约束提示词，部分目标可被稳定拉齐（如破碎效果保持黄金碎块粒子）。</p>
-            <p class="ios-body">5. 结论：当前更适合“多轮实验驱动的创意验证”，不适合单轮生成即作为稳定成片链路。</p>
+            <p class="ios-body">1. 本周 AI 应用案例是“实时生成视频讲解”：先从 SVG 动图切入验证，再根据效果回退并切换到 Manim 生成视频、前端以 MP4 方案承接播放。</p>
+            <p class="ios-body">2. 目标场景聚焦在几何、三角、物理题型，让用户在 Solving Steps 之外看到动态讲解过程，补足纯文本和公式不容易表达的运动关系。</p>
+            <p class="ios-body">3. 本周产出的关键不是“又做了一个 AI 功能”，而是把 AI 生成能力向工程可交付收敛，补齐了 loading、失败降级、插入位置、AB 分桶和播放链路等落地细节。</p>
+            <p class="ios-body">4. 当前结论是：AI 生成侧可以继续探索，但用户面看到的体验必须优先稳定，因此先用视频方案交付，再保留后续优化生成质量的空间。</p>
           </article>
         </section>
 
@@ -194,10 +193,10 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 自驱重点是规则收口：把需求写清、边界对齐、失败态补齐。</p>
-            <p class="ios-body">2. 已补齐关键规则：multiPictureKey / imageText 字段约定、无图回退 text、生成失败时底部 Tab 不可进入且 icon 置灰、loading 中推送触发条件。</p>
-            <p class="ios-body">3. 评论区已形成明确决策：flashcard 转圈时机、set 失败是否提示、SG done 是否推送等分歧点被确认，降低了实现歧义与返工风险。</p>
-            <p class="ios-body">4. 阶段判断：本周暂无单独立项的新项目，但跨角色规则收口有实质推进，属于高价值执行支持工作。</p>
+            <p class="ios-body">1. 把“实时生成 SVG 动图讲解”从概念 PRD 推进到系统方案收敛，及时承认 SVG 路线的问题并改到更可落地的视频方案，避免团队继续在错误路径上消耗。</p>
+            <p class="ios-body">2. 继续往前推动高亮引用二期实验，不停留在一期结果复述，而是把下一轮核心验证点明确成“强制曝光 vs 点击触发”的机制差异。</p>
+            <p class="ios-body">3. 产出《Codex 工作架构：PM / PD 如何用科学的文件组织把 AI 变成长期工作系统》，把个人对 AI 工作流的实践沉淀成方法文档，属于对团队长期效率有复用价值的基础建设。</p>
+            <p class="ios-body">4. 在 NotificationBanner 和 follow-up 相关需求上主动补细节、收口实现口径，减少评审后反复补规则的成本。</p>
           </article>
         </section>
 
@@ -215,8 +214,9 @@
             </button>
           </div>
           <article class="ios-card space-y-3" data-copy-body>
-            <p class="ios-body">1. 感谢 Melody 对 Onboarding 学科专业化文案的协作校对，帮助在开发阶段统一表达口径，降低后续产品与社媒口径偏差风险。</p>
-            <p class="ios-body">2. 感谢金煜、沙荣、董晓东、谢明昊在评审与评论区的快速澄清，围绕推送策略、失败态交互、消息字段约束等关键点给出明确结论，保障了多模态追问从方案到联调的推进效率。</p>
+            <p class="ios-body">1. 感谢配合周包价格实验推全的支付配置和研发同学，帮助 Apple 与 Stripe 多组配置在本周顺利落地。</p>
+            <p class="ios-body">2. 感谢参与“实时生成视频讲解”评审和系统方案收敛的产品、研发同学，在 SVG 转视频的关键判断上快速对齐，避免方案继续空转。</p>
+            <p class="ios-body">3. 感谢配合 NotificationBanner 与 follow-up 细节收口的协作同学，让样式、交互和需求口径能在实现前先统一下来。</p>
           </article>
         </section>
       </section>
